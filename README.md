@@ -1,5 +1,10 @@
 # clic
 
+##Dependencies
+
+[Vue](https://vuejs.org/)
+[Electron](https://electronjs.org/)
+
 ## Project setup
 ```
 yarn install
