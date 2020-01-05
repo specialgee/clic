@@ -2,9 +2,10 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <p id="count-text">{{ count }}</p>
-    <p>
-      <button id="plus-button" @click="increment">+</button>
+    <p id="button-wrapper">
+      <button id="plus-button" @click="increment">
+        <p id="count-text">{{ count }}</p>
+      </button>
       <button @click="decrement">-</button>
     </p>
   </div>
@@ -14,6 +15,13 @@
 .home {
   position: relative;
   height: 100vh;
+}
+
+#button-wrapper {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 button {
@@ -31,10 +39,11 @@ button:focus {
 }
 
 #plus-button {
-  border-radius: 50vh;
-  width: 50vh;
-  height: 50vh;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
   margin: 0;
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,6 +53,7 @@ button:focus {
 
 #count-text {
   margin: 0;
+  color: #333;
 }
 
 </style>
