@@ -9,17 +9,26 @@
 </template>
 
 <style>
+@font-face {
+  font-family: TurretRoadLight;
+  src: url(assets/font/TurretRoadLight.ttf);
+}
+
+* {
+    font-family: "TurretRoadLight", monospace, sans-serif;
+}
+
 html, body {
   background: #333;
   margin: 0;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #333;
 }
 
 /* #nav {
