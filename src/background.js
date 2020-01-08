@@ -20,15 +20,18 @@ function createWindow () {
     nodeIntegration: true
   } })
 
-  // Set window max/min size
-  win.setMaximumSize(500, 500);
-  win.setMinimumSize(300, 300);
-
   if (process.env.WEBPACK_DEV_SERVER_URL) {
+    // Set bigger window size in dev mode
+    win.setSize(400, 400);
+
     // Load the url of the dev server if in development mode
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
     if (!process.env.IS_TEST) win.webContents.openDevTools()
   } else {
+    // Set window max/min size
+    win.setMaximumSize(500, 500);
+    win.setMinimumSize(300, 300);
+
     createProtocol('app')
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
