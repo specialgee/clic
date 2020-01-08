@@ -1,8 +1,9 @@
 # clic
 
-##Dependencies
+## Dependencies
 
 [Vue](https://vuejs.org/)
+
 [Electron](https://electronjs.org/)
 
 ## Project setup
