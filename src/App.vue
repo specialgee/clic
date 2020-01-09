@@ -14,8 +14,13 @@
   src: url(assets/font/TurretRoad-Light.ttf);
 }
 
+@font-face {
+  font-family: CuteFont;
+  src: url(assets/font/CuteFont-Regular.ttf);
+}
+
 * {
-    font-family: "TurretRoadLight", monospace, sans-serif;
+    font-family: "CuteFont", monospace, sans-serif;
 }
 
 html, body {
