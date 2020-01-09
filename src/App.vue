@@ -26,6 +26,7 @@
 html, body {
   background: #333;
   margin: 0;
+  user-select: none;
 }
 
 #app {
