@@ -11,7 +11,7 @@
 <style>
 @font-face {
   font-family: TurretRoadLight;
-  src: url(assets/font/TurretRoadLight.ttf);
+  src: url(assets/font/TurretRoad-Light.ttf);
 }
 
 * {
