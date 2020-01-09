@@ -6,8 +6,8 @@
       <button id="plus-button" @click="increment">
         <p id="count-text">{{ count }}</p>
       </button>
-      <button id="minus-button" @click="decrement">BACK</button>
-      <div class="corner-bloc tr"></div>
+      <button id="minus-button" class="tl" @click="reset">RESET</button>
+      <button id="reset-button" class="tr" @click="decrement">BACK</button>
       <div class="corner-bloc bl"></div>
       <div class="corner-bloc br"></div>
     </div>
@@ -15,8 +15,12 @@
 </template>
 
 <style scoped>
+.tl {
+  top: 0;
+  left: 0;
+}
+
 .tr {
-  position: absolute;
   top: 0;
   right: 0;
 }
@@ -53,6 +57,11 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 button:focus {
@@ -63,23 +72,10 @@ button:focus {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-#minus-button {
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #count-text {
@@ -117,6 +113,9 @@ export default {
     },
     decrement () {
       store.commit('decrement')
+    },
+    reset () {
+      store.commit('reset')
     }
   }
 }

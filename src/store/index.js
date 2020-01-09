@@ -12,7 +12,8 @@ export default new Vuex.Store({
     increment: state => state.count++,
     decrement: state => {
       if (state.count > 0) state.count--
-    }
+    },
+    reset: state => state.count = 0
   },
   actions: {
   },
