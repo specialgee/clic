@@ -17,29 +17,30 @@
 <style scoped>
 .tl {
   top: 0;
-  left: 0;
+  left: -5px;
 }
 
 .tr {
   top: 0;
-  right: 0;
+  right: -5px;
 }
 
 .bl {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -5px;
 }
 
 .br {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -5px;
 }
 
 .home {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 #button-wrapper {
@@ -51,9 +52,10 @@
 
 button {
   display: inline-block;
-  background-color: #ddd;
+  background-color: #a6ab60c9;
   border: none;
-  color: #333;
+  border-radius: 5px;
+  color: #545454;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -86,8 +88,9 @@ button:focus {
 .corner-bloc {
   width: 50px;
   height: 50px;
-  background-color: #ddd;
+  background-color: #a6ab60c9;
   border: none;
+  border-radius: 5px;
 }
 
 </style>

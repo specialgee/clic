@@ -24,7 +24,7 @@
 }
 
 html, body {
-  background: #333;
+  background: #67755f;
   margin: 0;
   user-select: none;
 }
@@ -34,7 +34,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #333;
+  color: #545454;
 }
 
 /* #nav {
