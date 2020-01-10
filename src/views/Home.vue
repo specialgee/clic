@@ -55,6 +55,7 @@ button {
   background-color: #a6ab60c9;
   border: none;
   border-radius: 5px;
+  box-shadow: 0px 0px 10px #363e34;
   color: #545454;
   text-align: center;
   text-decoration: none;
@@ -91,6 +92,7 @@ button:focus {
   background-color: #a6ab60c9;
   border: none;
   border-radius: 5px;
+  box-shadow: 0px 0px 10px #363e34;
 }
 
 </style>
