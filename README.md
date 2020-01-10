@@ -1,5 +1,7 @@
 # clic
 
+steezy click counter app
+
 ## Dependencies
 
 [Vue](https://vuejs.org/)
