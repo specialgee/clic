@@ -55,7 +55,7 @@ button {
   background-color: #a6ab60c9;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px #363e34;
+  box-shadow: 0px 5px 5px #363e34;
   color: #545454;
   text-align: center;
   text-decoration: none;
@@ -65,10 +65,17 @@ button {
   margin: 0;
   padding: 0;
   position: absolute;
+  top: 0;
+  transition: all .10s linear 0s;
 }
 
 button:focus {
   outline:0;
+}
+
+button:active  {
+  box-shadow: none;
+  top: 1px;;
 }
 
 #plus-button {
@@ -79,6 +86,10 @@ button:focus {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+#plus-button:active  {
+    top: 51%;
 }
 
 #count-text {
@@ -92,7 +103,7 @@ button:focus {
   background-color: #a6ab60c9;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px #363e34;
+  box-shadow: 0px 6px 5px #363e34;
 }
 
 </style>
