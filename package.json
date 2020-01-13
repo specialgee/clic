@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "vue-cli-service electron:build",
+    "test": "vue-cli-service electron:build --publish=never",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --publish=never",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
