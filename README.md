@@ -1,4 +1,4 @@
-# clic
+# clic [![Build Status](https://travis-ci.com/specialgee/clic.svg?branch=master)](https://travis-ci.com/specialgee/clic)
 
 steezy click counter app
 
